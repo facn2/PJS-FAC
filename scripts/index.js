@@ -1,6 +1,5 @@
 var cityTemp = document.querySelector('.cityTemp');
 var imageIcon = document.querySelector('.imageIcon');
-console.log(imageIcon);
 
 addListener('.inputSearchForm', 'submit', function(event){
   event.preventDefault();
@@ -14,3 +13,7 @@ addListener('.inputSearchForm', 'submit', function(event){
 		imageIcon.src = sunIcon;
   });
 });
+
+ https://newsapi.org/v1/articles?source=techcrunch&apiKey=a5c68819c9574874bda2eb6683023e8f
+a5c68819c9574874bda2eb6683023e8f
+
