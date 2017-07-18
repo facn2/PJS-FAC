@@ -6,3 +6,17 @@ html {
 
 body {
   height: 100vh;
+}
+
+header {
+	display: flex;
+	width: 600px;
+	height: 50px;
+	border: 20px solid red;
+}
+
+img {
+	height: 100px;
+	width: 100px;
+}
+
