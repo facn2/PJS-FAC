@@ -13,6 +13,7 @@ As a  person loves special stuff I want to:
 + enable general information about the things we search for.
 + make it look beautiful with CSS.
 + creating tests.
++ finding our App link and put it in the README.
 
 
 
