@@ -1,6 +1,8 @@
 var profileGifContainer = document.querySelector('.profileGifContainer');
 var noiseContainInner = document.querySelector('.noiseContainInner');
-var isFamous = document.querySelector('.isFamous');
+var isFamousLeft = document.querySelector('.isFamousLeft');
+var isFamousRight = document.querySelector('.isFamousRight');
+
 
 
 addListener('.inputSearchForm', 'submit', function(event){
@@ -13,16 +15,21 @@ addListener('.inputSearchForm', 'submit', function(event){
 	var urlGiphy = 'http://api.giphy.com/v1/gifs/search?q=' + event.target[0].value + '&api_key=eb3ec09a06d34a58a7e16f62990f1c93&limit=12';
 
 	fetch(url2017,function(response) {
-		var result2017 = (response.response.total);
+		var result2017 = response.response.total;
     if (result2017 < 100){
-      isFamous.innerHTML = `W<br>H<br>O<br><br> ?<br>?`;
+      isFamousLeft.innerHTML = `W<br>H<br>O<br><br> A<br>R<br>E<br><br> Y<br>O<br>U<br><br>?<br>?`;
+      isFamousRight.innerHTML = `W<br>H<br>O<br><br> A<br>R<br>E<br><br> Y<br>O<br>U<br><br>?<br>?`;
+
       noiseContainInner.style.backgroundImage = `url('https://media4.giphy.com/media/uHEqSttWHv476/giphy.gif')`
 
     } else if (result2017 < 500) {
-      isFamous.textContent = 'Your almost there!!';
+      isFamousLeft.innerHTML = `Y<br>O<br>U<br>R<br><br>A<br>L<br>M<br>O<br>S<br>T<br><br>T<br>H<br>E<br>R<br>E<br>`;
+      isFamousRight.innerHTML = `Y<br>O<br>U<br>R<br><br>A<br>L<br>M<br>O<br>S<br>T<br><br>T<br>H<br>E<br>R<br>E<br>`;
 
     } else {
-      isFamous.textContent = 'You are super famous';
+
+      isFamousLeft.innerHTML = `Y<br>O<br>U<br>R<br><br>F<br>A<br>M<br>O<br>U<br>S<br>`;
+      isFamousRight.innerHTML = `Y<br>O<br>U<br>R<br><br>F<br>A<br>M<br>O<br>U<br>S<br>`;
     }
 
 });

@@ -74,21 +74,21 @@ html {
 
 .isFamousLeft {
   width: 100px;
-  height: 60vh;
-  float: left;
-  font-size: 60px;
-  border: 2px solid red;
+  height: 100vh;
+  position: absolute;
+  font-size: 40px;
   display: flex;
   justify-content: center;
-  margin-left: 80px;
+  left: 80px;
+  top: 0;
 }
 .isFamousRight {
   width: 100px;
-  height: 60vh;
-  float: right;
-  font-size: 60px;
-  border: 2px solid red;
+  height: 100vh;
+  position: absolute;
+  font-size: 40px;
+  right: 80px;
+  top: 0;
   display: flex;
   justify-content: center;
-  margin-right: 80px;
 }
