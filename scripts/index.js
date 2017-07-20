@@ -34,15 +34,8 @@ addListener('.inputSearchForm', 'submit', function(event){
 
 });
 
-
-
-// var totalResult = result2012 + result2013 + result2014 + result2015 + result2016 + result2017;
-// console.log(totalResult);
-
-
 fetch(urlGiphy, function(response) {
 		var gifImage = response.data[0].images.downsized_medium.url;
-    console.log(gifImage);
 		noiseContainInner.style.backgroundImage = `url('${gifImage}')`
 });
 
