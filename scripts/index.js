@@ -33,7 +33,7 @@ addListener('.inputSearchForm', 'submit', function(event){
     }
 
 });
-
+ 
 fetch(urlGiphy, function(response) {
 		var gifImage = response.data[0].images.downsized_medium.url;
 		noiseContainInner.style.backgroundImage = `url('${gifImage}')`
