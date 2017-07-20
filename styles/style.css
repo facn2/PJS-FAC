@@ -59,6 +59,36 @@ html {
 	top: 60%;
 	left: 55%;
 	margin: -250px 0 0 -250px;
-
 }
 
+.wrapperHeader {
+  width: 400px;
+  height: 400px;
+  border: 2px solid red;
+}
+
+/*.marqueeWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}*/
+
+.isFamousLeft {
+  width: 100px;
+  height: 60vh;
+  float: left;
+  font-size: 60px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+}
+.isFamousRight {
+  width: 100px;
+  height: 60vh;
+  float: right;
+  font-size: 60px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  margin-right: 80px;
+}
